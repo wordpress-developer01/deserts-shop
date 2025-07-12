@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+
+:root {
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+
+    --rose-50: hsl(20, 50%, 98%);
+    --rose-100: hsl(13, 31%, 94%);
+    --rose-300: hsl(14, 25%, 72%);
+    --rose-400: hsl(7, 20%, 60%);
+    --rose-500: hsl(12, 20%, 44%);
+    --rose-900: hsl(14, 65%, 9%);
+}
+
+
+body{
+    background-color: var(--rose-100);
+    font-family: "Red Hat Text", sans-serif;
+}
+
+
+.HD {
+    display: flex;
+    justify-content: center;
+}
+
+.cart {
+    margin: 70px 0px 0px 80px;
+    background-color: var(--rose-50);
+    width: 300px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Deserts>h2{
+    margin-left: 5%;
+}
+
+.Deserts{
+padding-bottom: 50px;
+}
+
+.ul-deserts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   list-style: none;
+    gap: 40px;
+    margin-right: 60px;
+}
+
+.dessert-item{
+    position: relative;
+}
+
+.btn-cart {
+    position: absolute;
+    border: 1px solid var(--rose-900);
+    border-radius: 10px;
+    z-index: 1;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--rose-50);
+}
+
+.btn-order{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--red);
+    color: var(--rose-50);
+}
